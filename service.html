@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robi health care center</title>
+    <link rel="stylesheet" href="style.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+
+<body>
+    <section class="one">
+
+        <nav class="menu">
+            <div class="logo">
+                <img src="img/5.jpg" alt="">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About us</a></li>
+                <li><a href="index.html">Service</a></li>
+
+
+            </ul>
+        </nav>
+    </section>
+
+    <section class="two">
+        <div class="slide-a">
+
+            <div class="mySlides fade">
+
+                <img class="mySlides-top" src="img/1.jpg">
+                <div class="top-left">Robi health care center</div>
+                <div class="top-right">An Unique care center</div>
+                <div class="bottom-left">Come for care</div>
+                <div class="bottom-right">Build a best world</div>
+                <div class="centered">Since-1971 A.D;</div>
+                <div class="numbertext">1 / 4</div>
+                <div class="text">Caption One</div>
+
+            </div>
+
+            <div class="mySlides fade">
+                <img class="mySlides-bottom" src="img/2.jpg">
+                <div class="top-left">Robi health care center</div>
+                <div class="top-right">An Unique care center</div>
+                <div class="bottom-left">Come for care</div>
+                <div class="bottom-right">Build a best world</div>
+                <div class="centered">Since-1971 A.D;</div>
+                <div class="numbertext">2 / 4</div>
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img class="mySlides-left" src="img/3.jpg">
+                <div class="top-left">Robi health care center</div>
+                <div class="top-right">An Unique care center</div>
+                <div class="bottom-left">Come for care</div>
+                <div class="bottom-right">Build a best world</div>
+                <div class="centered">Since-1971 A.D;</div>
+                <div class="numbertext">3 / 4</div>
+                <div class="text">Caption Three</div>
+            </div>
+            <div class="mySlides fade">
+                <img class="mySlides-right" src="img/4.jpg">
+
+                <div class="top-left">Robi health care center</div>
+                <div class="top-right">An Unique care center</div>
+                <div class="bottom-left">Come for care</div>
+                <div class="bottom-right">Build a best world</div>
+                <div class="centered">Since-1971 A.D;</div>
+                <div class="numbertext">4 / 4</div>
+                <div class="text">Caption Four</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+
+            <div class="dott">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+
+        </div>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+
+
+
+
+        </script>
+        </div>
+    </section>
+    <div class="about">
+        <h1>Our Services</h1>
+
+        <h3>World class services in our health care center</h3>
+        <p>Under this service, we are promised to maintain, restore, and promote not only physical function but also
+            health and fitness. As per expert therapist suggestion, our therapist works almost 24/7 and prevent
+            symptoms, develop disorders and functional limitations and disabilities that may be caused by disease,
+            disorder. You needed physio therapist Contact us.</p>
+    </div>
+
+
+    <footer class="ownership"> Copyrights © 2015 All Rights Reserved by English School of Canada
+        Terms of Use / Privacy Policy</footer>
+    </div>
+
+</html>
