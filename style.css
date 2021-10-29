@@ -232,6 +232,11 @@ background-color:red;
 }
 
 /* deacription start*/
+.about p{
+  font-size: 20px;
+  font-style: italic;
+}
+
 .staff-heading{
  
   float: left;
